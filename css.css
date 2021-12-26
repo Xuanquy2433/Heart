@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
+body {
+  margin: 0;
+  padding: 0;
+  background: #0b1522;
+  display: flex;
+  text-align: center;
+  height: 10vh;
+  width: 100vw;
+  margin-top: 20%;
+}
+.text {
+  position: absolute;
+  color: whitesmoke;
+  font-family:QuickSand;
+  left: 0;
+  right: 0;
+  width: 500px;
+  top: 420px;
+  margin: 0px auto;
+}
+.heart {
+  width: 70px;
+  height: 70px;
+  left: 1045%;
+  background: #f20044;
+  position: relative;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 90px #f20044;
+  animation: heart 0.6s linear infinite;
+}
+
+.heart:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: #f20044;
+  right: -50%;
+  border-radius: 50px;
+  box-shadow: 10px -10px 90px #f20044;
+}
+
+.heart:before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: #f20044;
+  top: -50%;
+  right: 0%;
+  border-radius: 50px;
+  box-shadow: -10px 10px 90px #f20044;
+}
+@keyframes heart {
+  0% {
+    transform: rotate(-45deg) scale(1.07);
+  }
+  80% {
+    transform: rotate(-45deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(-45deg) scale(0.7);
+  }
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: #0b1522;
+        display: flex;
+        text-align: center;
+        height: 10vh;
+        width: 50vw;
+        margin-top: 20%;
+      }
+      .text {
+        position: absolute;
+        color: whitesmoke;
+        font-family:QuickSand;
+        left: 0;
+        right: 0;
+        width: 300px;
+        top: 320px;
+        margin: 0px auto;
+      }
+      .heart {
+        width: 70px;
+        height: 70px;
+        left: 212%;
+        background: #f20044;
+        position: relative;
+        transform: rotate(-45deg);
+        box-shadow: -10px 10px 90px #f20044;
+        animation: heart 0.6s linear infinite;
+      }
+      
+      .heart:after {
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background: #f20044;
+        right: -50%;
+        border-radius: 50px;
+        box-shadow: 10px -10px 90px #f20044;
+      }
+      
+      .heart:before {
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background: #f20044;
+        top: -50%;
+        right: 0%;
+        border-radius: 50px;
+        box-shadow: -10px 10px 90px #f20044;
+      }
+      @keyframes heart {
+        0% {
+          transform: rotate(-45deg) scale(1.07);
+        }
+        80% {
+          transform: rotate(-45deg) scale(1);
+        }
+      
+        100% {
+          transform: rotate(-45deg) scale(0.7);
+        }
+      }
+  }
