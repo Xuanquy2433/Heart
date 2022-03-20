@@ -11,5 +11,6 @@ function stopMusic() {
 
    
     audio.pause();
+    audio.src = audio.src;
     
 }
