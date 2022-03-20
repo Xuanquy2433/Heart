@@ -1,16 +1,15 @@
-var audio = new Audio('nga.mp3');
+var audio = new Audio('music.mp3');
 
 function music() {
 
     
-    console.log("yeu cau");
+    console.log("LUV");
     audio.play();
     
 }
 function stopMusic() {
 
    
-    console.log("tat");
     audio.pause();
     
 }
