@@ -1,4 +1,4 @@
-var audio = new Audio('nga.mp3');
+var audio = new Audio('music.mp3');
 
 function music() {
 
